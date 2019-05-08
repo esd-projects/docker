@@ -3,7 +3,6 @@ MAINTAINER anythink
 
 COPY mote /etc/motd
 COPY bashrc /root/.bashrc
-COPY softList /etc/softList
 
 RUN apt-get update  && \
     apt-get install libbz2-dev libzip-dev libssl-dev procps iproute unzip git-core libfreetype6-dev  libjpeg62-turbo-dev libmcrypt-dev libpng-dev librabbitmq-dev -y && \
@@ -35,5 +34,7 @@ RUN apt-get update  && \
 
 
 VOLUME ["/data"]
+
+WORKDIR /data
 
 ENTRYPOINT ["/bin/bash"]
