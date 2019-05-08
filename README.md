@@ -11,7 +11,7 @@ go-swoole 的docker容器，免安装扩展，一键启动适合go-swoole运行�
 
  `docker run -it --rm -p 8080:8080 -v $PWD:/data registry.cn-beijing.aliyuncs.com/anythink/go-swoole:latest` 
  
-请在 go-swoole 根目录运行容器，否则修改$PWD为代码根路径，如果修改了端口请把8080 修改为自己使用的端口.
+请在 go-swoole 根目录运行容器，否则修改$PWD为代码根路径（windows需要用%cd%替换$PWD），如果修改了端口请把8080 修改为自己使用的端口.
 
 镜像启动后的目录即挂载到主机的代码目录，注意Mac系统无法使用inotify热加载功能。
 

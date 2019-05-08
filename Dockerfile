@@ -26,11 +26,12 @@ RUN apt-get update  && \
         && docker-php-ext-enable swoole \
     && docker-php-source delete \
     && curl -sS https://install.phpcomposer.com/installer | php -- --install-dir=/usr/local/bin --filename=composer \
-    && composer config -g repo.packagist composer https://packagist.phpcomposer.com \
-    && echo '[ ! -z "$TERM" -a -r /etc/motd ] && cat /etc/motd' >> /etc/bash.bashrc \
+    && composer config -g repo.packagist composer https://packagist.laravel-china.org \
     && apt-get clean \
     && apt-get autoclean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+RUN  echo '[ ! -z "$TERM" -a -r /etc/motd ] && cat /etc/motd' >> /etc/bash.bashrc
 
 
 VOLUME ["/data"]
