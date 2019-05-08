@@ -24,4 +24,11 @@ go-swoole 的docker容器，免安装扩展，一键启动适合go-swoole运行�
  `docker build -t registry.cn-beijing.aliyuncs.com/anythink/go-swoole:latest . `
  
  
+ ### 相关说明
+ 
+ 如果使用Mac系统想从docker里访问宿主的服务比如redis，mysql，则需使用 192.168.65.2 或者 host.docker.internal 。
+ 
+ 如果非Mac系统，则需使用 172.17.0.1
+ 
+ [] [https://docs.docker.com/docker-for-mac/networking/#there-is-no-docker0-bridge-on-macos]
  ### 安装的软件与扩展请查看 Dockerfile
