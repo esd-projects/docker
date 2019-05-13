@@ -1,7 +1,4 @@
 # docker
-go-swoole 的docker容器，免安装扩展，一键启动适合go-swoole运行的开发环境。
-
-# docker
 EasySwoole Distributed 的 docker 镜像，免安装扩展，一键启动适合ESD运行的开发环境。
 
 ```
