@@ -38,4 +38,4 @@ VOLUME ["/data"]
 
 WORKDIR /data
 
-ENTRYPOINT ["/bin/bash"]
+CMD ["/bin/bash"]
